@@ -1,0 +1,23 @@
+<%- include('header'); -%>
+
+    <div class="box">
+        <h1> <%= Date %> </h1>
+    </div>
+   <div class="Box">
+
+   </div>
+    <div class="box">
+     
+        <% for (var i=0 ; i<add_here.length ; i++) { %>
+            <div class="item ">
+                <input type="checkbox">
+            <p class="animate__animated animate__rubberBand"> <%=add_here[i]%> </p>
+            </div>
+        <% } %>
+    <form class="item" action="/" method="post">
+        <input type="text" name="new_item" placeholder="New Item" autocomplete="off">
+        <button type="submit" name="List" value= <%=Date%> >+</button>
+    </form>
+   </div>
+   
+   <%- include('footer'); -%>
